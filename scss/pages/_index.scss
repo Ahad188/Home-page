@@ -166,4 +166,76 @@
                }
           }
      }
+     .slide{
+          margin-top: 20px;
+          background: url('../../img/slide.png');
+          background-position: center;
+          background-size: cover;
+          height: 641px;
+          position: relative;
+          .icons{
+                position: absolute;
+                top: 50%;
+                left: 7%;
+                
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            
+               width: 1300px;
+               a{
+                    text-decoration: none;
+                    i{
+                         font-size: 30px;
+                       
+                           color: #FF5A30;
+                       
+                    }
+               }
+          }
+     }
+}
+// sub category
+.subCategory{
+     margin-top: 120px;
+     .sub-content{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid #C1D4E8;
+          padding: 20px 30px;
+          // height: 194px;
+          
+          .box{
+               padding: 20px 30px;
+               height: 116px;
+               box-sizing: border-box;
+               transition: all 0.4s ease-in-out;
+               i{
+                     color: #001F3F;
+                     font-size: 20px;
+                     transition: all 0.4s ease-in-out;
+               }
+               h3{
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #001F3F;
+                    transition: all 0.4s ease-in-out;
+               }
+               &:hover{
+                    background: #FF5A30;
+                    color: #fff;
+                    
+                    &:hover h3{
+                         color: #fff;
+                    }
+                    &:hover i{
+                         color: #fff;
+                    }
+               }
+          }
+     }
 }
