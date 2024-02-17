@@ -14,6 +14,13 @@
      color: #FFFFFF;
 
 }
+@mixin sub-title{
+     font-family: 'Space Grotesk';
+     font-weight: 700;
+     font-size: 15px;
+     line-height: 20px;
+     color: #FF5A30;
+}
 .hr{
      border: 1px solid #C1D4E8;
 }
@@ -78,4 +85,85 @@
           }
      }
 }
- 
+//  banner
+.banner{
+     margin-top: 60px;
+     .content{
+          display: flex;
+          gap: 40px;
+          justify-content: space-between;
+          align-items: center;
+          .left{
+               h4{
+                    @include sub-title;
+               }
+               h1{
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 80px;
+                    line-height: 100px;
+                    color: #001F3F;
+                    width: 590px;
+               }
+          }
+          .right{
+               .pera{
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #435970;
+                     
+               }
+               .learn{
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    // border: 1px solid red;
+                    .more{
+                         @include common;
+                         width: 176px;
+                         height: 60px;
+                         padding: 15px;
+                         display: flex;
+                         gap: 20px;
+                         align-items: center;
+                         border: 2px solid #fff;
+                         position: relative;
+                         transition: all 0.4s ease-in-out;
+                         // z-index: 1;
+                         &::before{
+                              position: absolute;
+                              content: '';
+                              top: -4px;
+                              left: -4px;
+                              height: 22px;
+                              width: 22px;
+                              z-index: -1;
+                              background: #FF5A30;
+                              transition: all 0.4s ease-in-out;
+                         }
+                         &::after{
+                              position: absolute;
+                              content: '';
+                              bottom: -4px;
+                              right: -4px;
+                              height: 22px;
+                              width: 22px;
+                              z-index: -1;
+                              background: #FF5A30;
+                              transition: all 0.4s ease-in-out;
+                              
+                         }
+                         &:hover{
+                              border: 1px solid #FF5A30;
+                              background: #001F3F;
+                         }
+                    }
+               }
+          }
+     }
+}
