@@ -21,6 +21,73 @@
      line-height: 20px;
      color: #FF5A30;
 }
+// section title
+.section-title{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     .title{
+          .sub-head{
+               font-family: 'Space Grotesk';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 15px;
+               line-height: 20px;   
+               color: #FF5A30;
+          }
+          .head{
+               font-family: 'Space Grotesk';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 30px;
+               line-height: 40px;   
+               color: #001F3F;
+
+          }
+     }
+     .section-link{
+           background: #FF5A30;
+           padding: 10px 20px;
+           display: flex;
+           align-items: center;
+           gap: 10px;
+           position: relative;
+           border: 1px solid #fff;
+           transition: all 0.4s ease-in-out;
+           a{
+               text-decoration: none;
+               color: #fff;
+           }
+           &::before{
+               position: absolute;
+               content: '';
+               width: 23px;
+               height: 23px;
+               background: #FF5A30;
+               top: -4px;
+               left: -4px;
+               z-index: -1;
+           }
+           &::after{
+               position: absolute;
+               content: '';
+               width: 23px;
+               height: 23px;
+               background: #FF5A30;
+               bottom: -4px;
+               right: -4px;
+               z-index: -1;
+           }
+           &:hover{
+               border: 2px solid orangered;
+               background: #001F3F;
+           }
+     }
+}
+
+
+
+
 .hr{
      border: 1px solid #C1D4E8;
 }
@@ -122,47 +189,45 @@
                     display: flex;
                     align-items: center;
                     gap: 30px;
-                    // border: 1px solid red;
+                     transition: all 0.4s ease-in-out;
                     .more{
-                         @include common;
-                         width: 176px;
-                         height: 60px;
-                         padding: 15px;
+                         background: #FF5A30;
+                         padding: 10px 20px;
                          display: flex;
-                         gap: 20px;
                          align-items: center;
-                         border: 2px solid #fff;
+                         gap: 10px;
                          position: relative;
+                         border: 1px solid #fff;
                          transition: all 0.4s ease-in-out;
-                         // z-index: 1;
+                         a{
+                             text-decoration: none;
+                             color: #fff;
+                         }
                          &::before{
-                              position: absolute;
-                              content: '';
-                              top: -4px;
-                              left: -4px;
-                              height: 22px;
-                              width: 22px;
-                              z-index: -1;
-                              background: #FF5A30;
-                              transition: all 0.4s ease-in-out;
+                             position: absolute;
+                             content: '';
+                             width: 23px;
+                             height: 23px;
+                             background: #FF5A30;
+                             top: -4px;
+                             left: -4px;
+                             z-index: -1;
                          }
                          &::after{
-                              position: absolute;
-                              content: '';
-                              bottom: -4px;
-                              right: -4px;
-                              height: 22px;
-                              width: 22px;
-                              z-index: -1;
-                              background: #FF5A30;
-                              transition: all 0.4s ease-in-out;
-                              
+                             position: absolute;
+                             content: '';
+                             width: 23px;
+                             height: 23px;
+                             background: #FF5A30;
+                             bottom: -4px;
+                             right: -4px;
+                             z-index: -1;
                          }
                          &:hover{
-                              border: 1px solid #FF5A30;
-                              background: #001F3F;
+                             border: 2px solid orangered;
+                             background: #001F3F;
                          }
-                    }
+                   }
                }
           }
      }
@@ -204,12 +269,14 @@
           align-items: center;
           border: 1px solid #C1D4E8;
           padding: 20px 30px;
+          border-radius: 5px;
           // height: 194px;
           
           .box{
                padding: 20px 30px;
                height: 116px;
                box-sizing: border-box;
+               border-radius: 5px;
                transition: all 0.4s ease-in-out;
                i{
                      color: #001F3F;
@@ -238,4 +305,44 @@
                }
           }
      }
+}
+.about{
+     margin-top: 130px;
+     .content{
+          position: relative;
+          // transition: all 0.10s ease-in-out;
+          // transition-delay: 0.10s ;
+          .about-img{
+               position: relative;
+               border-radius: 5px;
+               overflow: hidden;
+               img{
+                    width: 100%;
+                    transition: all 0.4s ease-in-out;
+               }
+          }
+          .overlay{
+              position: absolute;
+              display: none;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(180deg, rgba(0, 31, 63, 0) 0%, rgba(0, 31, 63, 0.967949) 100%);
+              border-radius: 5px;
+              h3{
+               color: #fff;
+               margin-top: 95%;
+               padding-left: 10%;
+              }
+         }
+         &:hover .overlay{
+          display: block;
+         
+         }
+         &:hover img{
+          transform: scale(1.2);
+     }
+     }
+     
 }
