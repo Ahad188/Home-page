@@ -707,15 +707,16 @@ a{
                }
                .back{
                     position: absolute;
-                    top: 10%;
+                    top: 9%;
                     left: 0;
-                    // background: #FF5A30;
-                    border: 1px solid #C1D4E8;
+                    // background: #cacaca;
+                    border: 1px solid #cacaca;
                     border-radius: 15px;
                     width: 100%;
                     height: 100%;
                     z-index: -1;
-                    clip-path: polygon(100% 0, 100% 100%, 0 88%, 0 0);
+                    // clip-path: polygon(100% 0, 100% 100%, 0 88%, 0 0);
+                    clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
                     transition: all 0.4s ease-in-out;
                }
                &:hover .back{
@@ -724,4 +725,83 @@ a{
           }
           
       }
+}
+// blog
+.blog-content{
+     border: 1px solid #C1D4E8;
+     border-radius: 5px;
+     padding: 10px 20px;
+     transition: all 0.4s ease-in-out;
+     // text-align: center;
+     .blog-img{
+          position: relative;
+          border-radius: 5px;
+          
+          img{
+               width: 100%;
+               
+               
+          }
+           
+           
+           
+     }
+     .sort{
+          position: absolute;
+          top: 80%;
+          left: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          background: #001F3F;
+          width: 177px;
+          height: 60px;
+          border-radius: 5px;
+          transition: all 0.4s ease-in-out;
+          // gap: 15px;
+        img{
+          width: 50px;
+          height: 50px;
+        }
+          h3{
+               font-family: 'Space Grotesk';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 15px;
+               line-height: 20px;
+               color: #FFFFFF;
+          }
+     }
+    .body{
+     margin-top: 30px;
+     .title{
+          font-family: 'Space Grotesk';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          color: #001F3F;
+          // padding: 10px 20px;
+          transition: all 0.4s ease-in-out;
+          &:hover{
+               color: #FF5A30;
+          }
+     }
+     .pera{
+          font-family: 'Space Grotesk';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: #435970;
+          padding: 10px 0px;
+          
+     }
+    }
+    &:hover{
+     border: 1px solid #FF5A30;
+     .sort{
+          background: #FF5A30;
+     }
+    }
 }
