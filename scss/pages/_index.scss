@@ -640,3 +640,88 @@ a{
            
      }
 }
+// client-say
+.client-say{
+     margin-top: 50px;
+     .contents{
+          padding: 15px;
+          margin-bottom: 20px;
+          .body{
+               position: relative;
+               border: 2px solid green;
+               padding: 20px;
+               background: #fff;
+               border: 1px solid #cacaca;
+               border-radius: 10px;
+               cursor: pointer;
+               .head-l{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .left{
+                         display: flex;
+                         gap: 15px;
+                         .name{
+                              font-family: 'Space Grotesk';
+                              font-style: normal;
+                              font-weight: 700;
+                              font-size: 20px;
+                              line-height: 30px;
+                              text-align: center;                             
+                              color: #001F3F;
+                         }
+                         .posi{
+                              font-family: 'Space Grotesk';
+                              font-style: normal;
+                              font-weight: 400;
+                              font-size: 16px;
+                              line-height: 26px;
+                              color: #435970;
+                         }
+                    }
+                    a{
+                         color: #cacaca;
+                         width: 50px;
+                         
+                         text-align: center;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                          
+                    }
+               }
+               .pera{
+                    padding: 20px 0;
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #435970;
+               }
+               .star{
+                    a{
+
+                         color: #FF5A30;
+                    }
+               }
+               .back{
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                    // background: #FF5A30;
+                    border: 1px solid #C1D4E8;
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    clip-path: polygon(100% 0, 100% 100%, 0 88%, 0 0);
+                    transition: all 0.4s ease-in-out;
+               }
+               &:hover .back{
+                    background: #FF5A30;
+               }
+          }
+          
+      }
+}
