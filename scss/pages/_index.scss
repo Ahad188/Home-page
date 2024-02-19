@@ -473,7 +473,7 @@ a{
                line-height: 30px;
                color: #FFFFFF;
                width: 286px;
-               margin-top: 90%;
+               margin-top: 80%;
                }
                a{
                     font-family: 'Space Grotesk';
@@ -498,4 +498,145 @@ a{
                transform: scale(1.2);
           }
      }  
+}
+// price
+.price{
+     margin-top: 120px;
+     .y-price{
+           
+          a{
+               font-family: 'Space Grotesk';
+               height: 60px;
+               font-weight: 700;
+               font-size: 15px;
+               line-height: 20px;
+               color: #FFFFFF;
+               transition: all 0.4s ease-in-out;
+               &:first-child{
+                    background: #FF5A30;
+                    padding: 10px 20px;
+                    
+                    &:hover{
+                         background: transparent;
+                         border: 1px solid #FF5A30;
+                         color: #001F3F;
+                    }
+               }
+               &:last-child{
+                    background: #FFFFFF;
+                    color: #001F3F;
+                    padding: 10px 20px;
+                    
+                    &:hover{
+                         background: transparent;
+                         border: 1px solid #FF5A30;
+                         color: #001F3F;
+                    }
+               }
+          }
+     }
+     .price-card{
+          text-align: center;
+          padding: 20px ;
+          border: 1px solid #cacaca;
+          transition: all 0.4s ease-in-out;
+          .name{
+               font-family: 'Space Grotesk';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 30px;
+               line-height: 40px;
+
+               color: #001F3F;
+          }
+          .pera{
+               font-family: 'Space Grotesk';
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 26px;
+               color: #435970;
+          }
+          .prices{
+               color:#001F3F;
+               font-family: "Space Grotesk";
+               text-align: center;
+               font-size: 30px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: 40px;
+               span{
+                    color:#001F3F;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    font-family: "Space Grotesk";
+               }
+          } 
+          .list{
+               padding: 5px 0;
+               a{
+                    color:#001F3F;
+                    text-align: center;
+                    font-family: "Space Grotesk";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    padding-top: 15px ;
+                    line-height: 20px;
+                    transition: all 0.4s ease-in-out;
+                    
+               }
+          }
+          .lists{
+               padding-top: 40px;
+               .plane{
+                    bottom: -40px;
+                    padding: 10px 30px;
+                    background: #001F3F;
+                    color: #fff;
+                    transition: all 0.4s ease-in-out;
+                    &:hover{
+                         background: #FF5A30;
+                    }
+                }
+          }
+          &:hover {
+               background: #001F3F;
+               color: #fff;
+               .name{
+                    color: #fff;
+               }
+               .pera{
+                    color: #fff;
+               }
+               .prices{
+                    color: #fff;
+                    cursor: pointer;
+                    span{
+                         color: #fff;
+                    }
+               }
+               .list{
+                    a{
+                         color: #fff;
+                         &:hover{
+                              color: #FF5A30;
+                         }
+                    }
+               }
+               .lists{
+                    a{
+
+                         background: #FF5A30;
+                         border-radius: 10px;
+                         &:hover{
+                              border: 1px solid #FF5A30;
+                              border-radius: 10px;
+                              background: transparent;
+                         } 
+                    }
+               }
+          }
+           
+     }
 }
