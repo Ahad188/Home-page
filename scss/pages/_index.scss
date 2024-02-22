@@ -29,6 +29,7 @@ a{
      display: flex;
      justify-content: space-between;
      align-items: center;
+     margin-bottom: 46px;
 }
 
  
@@ -137,14 +138,13 @@ a{
      }
      .search{
           display: flex;
+          align-items: center;
           gap: 40px;
           li{
                a{
                     text-decoration: none;
-                    i{
-                         height: 21px ;
-                         width: 21px;
-                          
+                    .h-icon{
+                         color: #FF5A30;  
                     }
                }
           }
@@ -164,7 +164,7 @@ a{
 }
 //  banner
 .banner{
-     margin-top: 60px;
+     margin-top: 70px;
      .content{
           display: flex;
           gap: 40px;
@@ -271,10 +271,10 @@ a{
 }
 // sub category
 .subCategory{
-     margin-top: 120px;
+     margin-top: 110px;
      .sub-content{
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           align-items: center;
           border: 1px solid #C1D4E8;
           padding: 20px 30px;
@@ -316,7 +316,7 @@ a{
      }
 }
 .about{
-     margin-top: 130px;
+     margin-top: 128px;
      .content{
           position: relative;
           // transition: all 0.10s ease-in-out;
@@ -359,7 +359,7 @@ a{
 }
 // service
 .service{
-     margin-top: 60px;
+     margin-top: 110px;
      .content{
           padding: 30px 20px;
           text-align: center;
@@ -367,26 +367,22 @@ a{
           flex-direction: column;
           border-radius: 5px;
           transition: all 0.4s ease-in-out;
-         
+          border: 1px solid #C1D4E8;
+         .s-img{
+          margin-top: 50px;
+         }
           .body{
                padding: 10px 0;
+               margin-top: 48px;
                
                h3{
-                    // padding: 20px 10px;
-                    // font-family: 'Space Grotesk';
-                    // font-style: normal;
-                    // font-weight: 400;
-                    // font-size: 16px;
-                    // line-height: 26px;
-                    // color: #435970;
-                    // a{
-                         font-family: 'Space Grotesk';
-                         font-weight: 700;
-                         font-size: 20px;
-                         line-height: 30px;
-                         color: #001F3F; 
-                         text-decoration: none; 
-                    // }
+               font-family: 'Space Grotesk';
+               font-weight: 700;
+               font-size: 20px;
+               line-height: 30px;
+               color: #001F3F; 
+               text-decoration: none; 
+               margin-bottom: 25px;
   
                }
                .pera{
@@ -396,6 +392,7 @@ a{
                     font-size: 16px;
                     line-height: 26px;
                     color: #435970;
+                    margin-bottom: 20px;
 
                }
                  
@@ -403,16 +400,16 @@ a{
           }
           &:hover{
                flex-direction: column-reverse;
-               background: #001F3F;
+               // background: #001F3F;
                &:hover h3,.pera{
-                    color: #fff;
+                    // color: #fff;
                }
           }
      }
 }
 // success-con
 .success{
-     margin-top: 60px;
+     margin-top: 130px;
      .success-con{
           display: flex;
           justify-content: space-between;
@@ -546,15 +543,20 @@ a{
                font-weight: 700;
                font-size: 30px;
                line-height: 40px;
-
+               margin-top: 35px;
                color: #001F3F;
           }
           .pera{
+                margin-top: 20px;
                font-family: 'Space Grotesk';
                font-weight: 400;
                font-size: 16px;
                line-height: 26px;
                color: #435970;
+            
+          }
+          .icon-homes{
+               margin-top: 30px;
           }
           .prices{
                color:#001F3F;
@@ -564,6 +566,7 @@ a{
                font-style: normal;
                font-weight: 700;
                line-height: 40px;
+               margin-bottom: 32px;
                span{
                     color:#001F3F;
                     font-size: 15px;
@@ -573,7 +576,8 @@ a{
                }
           } 
           .list{
-               padding: 5px 0;
+               padding: 8px 0;
+              
                a{
                     color:#001F3F;
                     text-align: center;
@@ -588,7 +592,8 @@ a{
                }
           }
           .lists{
-               padding-top: 40px;
+               padding-top: 31px;
+               margin-bottom: 30px;
                .plane{
                     bottom: -40px;
                     padding: 10px 30px;
@@ -642,7 +647,7 @@ a{
 }
 // client-say
 .client-say{
-     margin-top: 50px;
+     margin-top: 207px;
      .contents{
           padding: 15px;
           margin-bottom: 20px;
@@ -727,6 +732,9 @@ a{
       }
 }
 // blog
+.blog{
+     margin-top: 110px;
+}
 .blog-content{
      border: 1px solid #C1D4E8;
      border-radius: 5px;
