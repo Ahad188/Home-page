@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="fonts/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Home Page</title>
   </head>
   <body>
@@ -40,6 +42,7 @@
       <hr class="hr" />
     </header>
     <!-- banner start -->
+
     <section class="banner">
       <div class="container">
         <div class="content">
@@ -65,60 +68,59 @@
           </div>
         </div>
       </div>
-      <div class="slide">
-        <div class="icons">
-          <a href="#"><i class="my-icon icon-left"></i></a>
-          <a href="#"><i class="my-icon icon-left"></i></a>
-        </div>
-      </div>
+      
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide"> 
+                    <img src="img/slide.png" alt="">
+                 </div>
+                 <div class="swiper-slide">
+                    <img src="img/slide.png" alt="">
+                 </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+             </div>
     </section>
+
     <section class="subCategory">
       <div class="container">
-        <div class="sub-content">
+        <ul class="sub-content">
            
           
             
            
-          <div class="box">
+          <li class="box">
             <i class="my-icon icon-sub-1"></i>
-            <h3>Industrial</h3>
-          </div>
-          <div class="box">
+            <h3 class="box-li">Industrial <br>Ariel</h3>
+        </li>
+           
+          <li class="box">
             <i class="my-icon icon-sub2"></i>
-            <h3>
-              Eco <br />
-              Development
-            </h3>
-          </div>
-          <div class="box">
+            <h3 class="box-li">Eco Development </h3>
+          </li>
+          <li class="box">
             <i class="my-icon icon-sub3"></i>
-            <h3>
-              Power & <br />
-              Energy Feild
-            </h3>
-          </div>
-          <div class="box">
+            <h3 class="box-li">Power & Energy Feild</h3></li>
+          <li class="box">
             <i class="my-icon icon-sub4"></i>
-            <h3>
-              Oli And Gas <br />
+            <h3 class="box-li">
+              Oli And Gas 
               engineering
             </h3>
-          </div>
-          <div class="box">
+          </li>
+          <li class="box">
             <i class="my-icon icon-sub-5"></i>
-            <h3>
-              Architecture & <br />
+            <h3 class="box-li">
+              Architecture &  
               Design
             </h3>
-          </div>
-          <div class="box">
+          </li>
+          <li class="box">
             <i class="my-icon icon-sub3"></i>
-            <h3>
-              Modern <br />
-              Technology
-            </h3>
-          </div>
-        </div>
+            <h3 class="box-li">Modern  Technology</h3>
+           </li>
       </div>
     </section>
     <section class="about">
@@ -251,24 +253,28 @@
     <!-- success -->
     <section class="success">
       <div class="container">
-        <div class="success-con">
-          <div class="suc-box">
-            <h1>+115</h1>
-            <h4>Year Established</h4>
-          </div>
-          <div class="suc-box">
-            <h1>+1.6K</h1>
-            <h4>Our Total Project</h4>
-          </div>
-          <div class="suc-box">
-            <h1>+144</h1>
-            <h4>Our Winning Award</h4>
-          </div>
-          <div class="suc-box">
-            <h1>+55</h1>
-            <h4>Our Team Member</h4>
-          </div>
-        </div>
+        <ul class="success-con">
+          <li class="suc-box">
+               <h4 class="number">+155</h4>
+               <h5 class="title">Year Established</h5>
+          </li>
+          
+          
+         
+         
+          <li class="suc-box">
+            <h4 class="number">+1.6K</h4>
+            <h5 class="title">Our Total Project</h5>
+          </li>
+          <li class="suc-box">
+            <h4 class="number">+144</h4>
+            <h5 class="title">Our Winning Award</h5>
+          </li>
+          <li class="suc-box">
+            <h4 class="number">+55</h4>
+            <h5 class="title">Our Team Member</h5>
+          </li> 
+        </ul>
       </div>
     </section>
     <!-- our project -->
@@ -567,5 +573,21 @@
   
 
     <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>
